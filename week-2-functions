@@ -1,0 +1,92 @@
+# Functions
+
+## Mapping from Set to Set
+A function f: A -> B is A rule/formula/machine which transforms each a ∈ A into f(a) ∈ B
+
+### Examples:
+A = {1, 2, 10}
+B = {apple, DE, monkey}
+
+f:A -> B
+f(1) = "apple"
+f(2) = "apple"
+f(10) = "monkey"
+
+### VBS Example
+X = {all people in VBS study}
+Y = {+, -}
+
+FUnction
+test: x -> y
+Test(person) = +
+Test(person) = -
+
+### Business Example
+Y = {..., 2010, 2011, 2012, ...} Years in business and ℝ (real number line)
+FUnction: Profit: Y -> ℝ 
+Profit(year) = profit/loss in that year
+
+### Supervised Learning
+Figure out functions from a sample of input & output because in real-life do not normally have the functions
+Given some examples f: A -> B
+Given some examples of a ∈ B and f(a) ∈ B -> goal is to figure out function
+
+## Graphing Functions on Cartesian Plane
+Example: y=x² or y=2x-1
+
+f: ℝ -> ℝ (function from real number line to real number line)
+x -> f(x)
+Uses formula insteaed of just matching like above (e.g. 1 = " apple")
+f(x) = 2x-1
+x=1 f(x)=1
+x=0 f(x)=-1
+x=5.1 f(x)=9.2
+
+Graph allows visualization of functions with sets in ℝ since all values is infinite
+
+In general if g: ℝ -> ℝ then graph of g is a set of all points in the plane
+graph(g) = {(x,y) ∈ ℝ² : y=g(x)}
+
+Graph by testing various inputs through function and plotting points and drawing best fitting line
+y = x² - example of a quadratic test
+
+### Vertical line test
+Draw a vertical line, if it hits line at 2 points then line cannot be a function - cannot have two answers for any X
+Any vertical line intersects the graph of a function only one time
+
+## Increasing & Decreasing Functions
+Two classes of functions - not(most) all functions fall into these classes
+f is a strictly increasing function if a < b and f(a) < f(b)
+f is a strictly decreasing function if a < b and f(a) > f(b)
+
+Example of determining if functions are strictly increasing or strictly decreasing
+f(x) = 2ᵡ (example of exponential function) - strictly increasing
+g(x) = 3⁻ᵡ - strictly decreasing
+h(x) = x² - neither - but if you restrict interval (e.g. 0 to infinity) it can be strictkly increasing or decreasing
+
+### Real-World Examples
+Height vs years since birth - neither
+Value of car vs years since purchasing car - neither if you consider classics
+
+### Horizontal Line Test
+If horizontal line only hits line once then it is either strictly increasing or strictly decreasing
+
+## Functions - Composition & Inverse
+### Compose 2 functions
+f(x) = x²
+g(x) = x + 5
+Compose f(x) and g(x) g ∘ f: g composed with f or g following f
+g ∘ f = x² + 5
+
+Warning:
+f ∘ g = (x+5)² - order matters
+
+### Inversion functions
+When you compose them it undoes them
+f(x) = 2x
+g(x) = 1/2x
+g ∘ f = (2x)/2 so undoes it
+f and g are inverses - g = f⁻¹ (means inverse not to the power of neg 1)
+
+Warning: Not every function has an inverse (most do not)
+f(x) = x² - fails horizontal line test so not possible to create an inverse (no way to create square root function that would return 2 and/or -2)
